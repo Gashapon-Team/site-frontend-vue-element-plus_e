@@ -1,0 +1,9 @@
+.container{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    .header-other{
+        display: flex;
+        padding: 20px;
+    }
+}

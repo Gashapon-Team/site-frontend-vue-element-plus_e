@@ -1,0 +1,27 @@
+<template>
+    <div style="padding: 0 15px">
+        <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M1 5.25C1 4.83579 1.33579 4.5 1.75 4.5H18.25C18.6642 4.5 19 4.83579 19 5.25C19 5.66421 18.6642 6 18.25 6H1.75C1.33579 6 1 5.66421 1 5.25ZM1 10.5C1 10.0858 1.33579 9.75 1.75 9.75H18.25C18.6642 9.75 19 10.0858 19 10.5C19 10.9142 18.6642 11.25 18.25 11.25H1.75C1.33579 11.25 1 10.9142 1 10.5ZM1 15.75C1 15.3358 1.33579 15 1.75 15H18.25C18.6642 15 19 15.3358 19 15.75C19 16.1642 18.6642 16.5 18.25 16.5H1.75C1.33579 16.5 1 16.1642 1 15.75Z" fill="white"/>
+        </svg>
+    </div>
+</template>
+
+<script>
+export default {
+    name: "Hamburger",
+    setup(props,{emit}){}
+};
+</script>
+
+<style scoped>
+.hamburger {
+    display: inline-block;
+    vertical-align: middle;
+    width: 20px;
+    height: 20px;
+}
+
+.hamburger.is-active {
+    transform: rotate(180deg);
+}
+</style>
