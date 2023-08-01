@@ -34,6 +34,12 @@
     justify-content: flex-end;
 }
 
+.justify-start{
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-start;
+}
+
 .items-center {
     -webkit-box-align: center;
     -ms-flex-align: center;
@@ -62,6 +68,10 @@
     text-align: center;
 }
 
+.flex-column{
+    flex-direction: column;
+}
+
 .relative{
     position: relative;
 }
@@ -72,4 +82,56 @@
 
 .cursor-pointer{
     cursor: pointer;
+}
+
+.w-full{
+    width: 100%;
+}
+
+.w-50{
+    width: 50%;
+}
+
+.w-30{
+    width: 30%;
+}
+
+.w-70{
+    width: 70%;
+}
+
+.mr-1{
+    margin-right: 4px;
+}
+
+.mr-2{
+    margin-right: 8px;
+}
+
+.mr-3{
+    margin-right: 12px;
+}
+
+.mr-4{
+    margin-right: 16px;
+}
+
+.mr-5{
+    margin-right: 20px;
+}
+
+.mt-1{
+    margin-top: 4px;
+}
+
+.mt-2{
+    margin-top: 8px;
+}
+
+.mt-3{
+    margin-top: 12px;
+}
+
+.mt-4{
+    margin-top: 16px;
 }

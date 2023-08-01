@@ -60,9 +60,11 @@ export default {
 <style scoped>
 .demo-date-picker {
     display: flex;
-    width: 100%;
+    /* width: 100%; */
     padding: 0;
     flex-wrap: wrap;
+    width: 40px;
+    height: 40px;
 }
 
 .demo-date-picker .block {

@@ -11,51 +11,18 @@
             active-text-color="#00000"
             @open="handleOpen" 
             @close="handleClose">
-                <el-sub-menu index="1" class="side-menu__item">
+                <el-sub-menu class="side-menu__item" v-for="(data,index1) in sideMenu" :index="index1" :key="index1">
                     <template #title>
                         <el-icon>
-                            <location />
+                            <component :is="data.icon" />
                         </el-icon>
-                        <span>會員中心</span>
+                        <span>{{data.title}}</span>
                     </template>
-                    <!-- <el-menu-item-group title="Group One"> -->
-                    <router-link class="text-white" to="/infoSetting">
-                        <el-menu-item index="1-1">
-                            基本資料設定
+                        <el-menu-item v-for="(datachild,index2) in data.item" :index="`${index1}-${index2}`" :key="datachild">
+                            <router-link class="router" :to= datachild.path>
+                            {{datachild.subtitle}}
+                            </router-link>
                         </el-menu-item>
-                    </router-link>
-                    <router-link class="text-white" to="/kFCValidation">
-                        <el-menu-item index="1-2">
-                            實名認證(KYC)
-                        </el-menu-item>
-                    </router-link>
-                    <!-- </el-menu-item-group> -->
-                    <!-- <el-menu-item-group title="Group Two"> -->
-                        <el-menu-item index="1-3">item three</el-menu-item>
-                    <!-- </el-menu-item-group> -->
-                    <el-sub-menu index="1-4">
-                        <template #title>item four</template>
-                        <el-menu-item index="1-4-1">item one</el-menu-item>
-                    </el-sub-menu>
-                </el-sub-menu>
-                <el-sub-menu index="2" class="side-menu__item">
-                    <template #title>
-                        <el-icon>
-                            <location />
-                        </el-icon>
-                        <span>Navigator two</span>
-                    </template>
-                    <el-menu-item-group title="Group One">
-                        <el-menu-item index="2-1">item one</el-menu-item>
-                        <el-menu-item index="2-2">item two</el-menu-item>
-                    </el-menu-item-group>
-                    <el-menu-item-group title="Group Two">
-                        <el-menu-item index="2-3">item three</el-menu-item>
-                    </el-menu-item-group>
-                    <el-sub-menu index="2-4">
-                        <template #title>item four</template>
-                        <el-menu-item index="2-4-1">item one</el-menu-item>
-                    </el-sub-menu>
                 </el-sub-menu>
             </el-menu>
         </el-col>
@@ -70,6 +37,9 @@ import {
     Setting,
 } from '@element-plus/icons-vue'
 
+import sideMenuItem from '../scripts/sideMenu';
+import { ref} from 'vue';
+
 export default{
     name:'collaspe',
     components:{
@@ -77,6 +47,7 @@ export default{
         Location,
         Setting,
         IconMenu,
+        sideMenuItem
     },
     setup(){
         const handleOpen = (key, keyPath) => {
@@ -86,10 +57,13 @@ export default{
             console.log(key, keyPath)
         }
 
+        const sideMenu = ref(sideMenuItem)
+
 
         return{
             handleOpen,
             handleClose,
+            sideMenu
         }
 
     }
@@ -136,7 +110,8 @@ export default{
     background-color:inherit;
 }
 
-.text-white{
+.router{
     color:#FFFFFF;
+    width: 100%;
 }
 </style>

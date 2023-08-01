@@ -2,7 +2,7 @@
 <div class="common-layout">
     <el-container style="height:100vh">
         <el-aside>
-            <AdminSideMenu/>
+            <SideMenu/>
         </el-aside>
         <el-container class="admin-cotainer">
         <el-header class="admin-header">
@@ -17,16 +17,16 @@
 
 <script>
 import AdminHeader from '../components/AdminHeader.vue';
-import AdminSideMenu from '../components/AdminSideMenu.vue';
-import DatePicker from '../components/DatePicker.vue';
+import SideMenu from '../components/SideMenu.vue';
+// import DatePicker from '../components/DatePicker.vue';
 import AdminFooter from '../components/AdminFooter.vue';
 
 export default {
     name:'index',
     components:{
         AdminHeader,
-        AdminSideMenu,
-        DatePicker,
+        SideMenu,
+        // DatePicker,
         AdminFooter
     },
     setup() {
@@ -37,7 +37,7 @@ export default {
 
 <style scoped>
 .admin-header{
-    box-shadow: 0px 2px 2px -1px rgba(27, 36, 44, 0.04);
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
 }
 
 .el-header{
