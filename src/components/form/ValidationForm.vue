@@ -116,26 +116,33 @@
                 <div class="flex">
                     <el-row>
                         <el-col style="margin-right: 12px;">
-                            <Image 
-                            :fit="'contain'" 
-                            :imageTitle="'國民身分證 (正面)'" 
-                            :url="'../../src/assets/image/container.png'"
-                            :Imageheight="'220px'"
-                            :Imagewidth="'350px'"
-                            :titleColor="'#1F2937'"
-                            />
+                            <Image :fit="'contain'" :imageTitle="'國民身分證 (正面)'" :url="'../../src/assets/image/container.png'"
+                                :Imageheight="'220px'" :Imagewidth="'350px'" :titleColor="'#1F2937'" />
+                        </el-col>
+                        <el-col style="margin-right: 12px;margin-top: 12px">
+                            <el-upload class="upload-demo" drag
+                                action="https://run.mocky.io/v3/9d059bf9-4660-45f2-925d-ce80ad6c4d15" multiple>
+                                <el-icon class="el-icon--upload"><upload-filled /></el-icon>
+                                <div class="el-upload__text">
+                                    Drop file here or <em>click to upload</em>
+                                </div>
+                                <template #tip>
+                                    <div class="el-upload__tip">
+                                        jpg/png files with a size less than 500kb
+                                    </div>
+                                </template>
+                            </el-upload>
                         </el-col>
                     </el-row>
                 </div>
             </el-form>
         </div>
-
     </div>
 </template>
 
 <script>
 import { ref, h, shallowRef, computed } from 'vue';
-import Image from '../components/image.vue';
+import Image from '../Image/Image.vue';
 
 export default {
     name: 'basicForm',
@@ -259,9 +266,9 @@ export default {
 <style lang="scss">
 .basicForm {
     padding: 40px 20px;
-    color:#1F2937;
+    color: #1F2937;
 
-    &__idTitle{
+    &__idTitle {
         font-size: 14px;
     }
 
@@ -316,7 +323,7 @@ export default {
     }
 
     .calcendar {
-        background-image: url('../assets/image/date_range.svg');
+        background-image: url('../../assets/image/date_range.svg');
         background-size: contain;
         background-repeat: no-repeat;
         height: 50px;
@@ -330,7 +337,7 @@ export default {
     width: 100%;
 }
 
-.el-form-item__label{
-    color:#1F2937;
+.el-form-item__label {
+    color: #1F2937;
 }
 </style>

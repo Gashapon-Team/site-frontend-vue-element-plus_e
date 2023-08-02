@@ -28,6 +28,13 @@
     justify-content: space-between;
 }
 
+.justify-around {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-around;
+}
+
+
 .justify-end {
     -webkit-box-pack: end;
     -ms-flex-pack: end;

@@ -27,8 +27,8 @@
 
 <script>
 import Process from '../components/Process.vue';
-import AdminHeader from '../components/AdminHeader.vue';
-import ValidationForm from '../components/ValidationForm.vue'
+import AdminHeader from './layout/AdminHeader.vue';
+import ValidationForm from './form/ValidationForm.vue'
 import LeftTab from '../components/LeftTab.vue';
 
 export default {
@@ -74,7 +74,7 @@ export default {
 
 .el-main{
     overflow: hidden;
-    min-height: 100vh;
+    // min-height: 100vh;
 }
 
 </style>

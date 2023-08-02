@@ -54,19 +54,19 @@ const sideMenu = [
     },
     {
         title: '通知中心',
-        icon: 'Comment',
+        icon: 'InsertComment',
     },
     {
         title: '電子發票',
-        icon: '',
+        icon: 'PostAdd',
     },
     {
         title: '捐款',
-        icon: '',
+        icon: 'AttachMoney',
     },
     {
         title: '物流',
-        icon: 'ShoppingTrolley',
+        icon: 'LocalGrocery',
     }
 ]
 

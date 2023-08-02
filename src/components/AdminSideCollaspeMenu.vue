@@ -54,7 +54,7 @@
 
 <script>
 import { ref } from 'vue'
-import Hamgburger from '../components/Hamgburger.vue'
+import Hamgburger from './Hamgburger.vue'
 import {
     Document,
     Menu as IconMenu,
