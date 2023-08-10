@@ -19,12 +19,6 @@
         </el-menu>
     </div>
 </div>
-<!-- <el-page-header :icon="null"> -->
-
-    <!-- <template #default>
-        <span class="text-large font-600 mr-3"> Title </span>
-    </template> -->
-<!-- </el-page-header> -->
 </template>
 
 <script>
