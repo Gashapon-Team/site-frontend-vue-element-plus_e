@@ -2,7 +2,8 @@
     <el-row class="tac">
         <el-col class="sideMenuContainer">
             <div class="sideMenuContainer__hamburger">
-                <img src="../../assets/image/NewebPay_Logo.svg" />
+                <!-- <img src="../../assets/image/NewebPay_Logo.svg" /> -->
+                <img src="../../assets/image/demo.png" />
             </div>
             <el-scrollbar height="100vh">
                 <el-menu default-active="2" text-color="#fff" class="el-menu-vertical-demo side-menu"
