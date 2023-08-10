@@ -41,9 +41,9 @@ import InsertComment from '../icon/InsertComment.vue';
 import PostAdd from '../icon/PostAdd.vue'
 import LocalGrocery from '../icon/LocalGrocery.vue';
 import AttachMoney from '../icon/AttachMoney.vue';
-import StackedLine from '../Icon/StackedLine.vue';
-import Person from '../Icon/Person.vue';
-import Error from '../Icon/Error.vue';
+import StackedLine from '../icon/StackedLine.vue';
+import Person from '../icon/Person.vue';
+import Error from '../icon/Error.vue';
 import { ref } from 'vue';
 
 
