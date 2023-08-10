@@ -2,8 +2,36 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
+
+    &__content{
+        display: flex;
+        flex-basis: auto;
+        width: 250px;
+        padding: 20px;
+        &__item{
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-sizing: border-box;
+        }
+        .flex-1{
+            width: 20%;
+        }
+        .flex-4{
+            flex: 60%;
+        }
+
+        .timeCount{
+            color:#666;
+            letter-spacing: 0.56px;
+        }
+    }
+
+
     .header-other{
         display: flex;
         padding: 20px;
+        flex-basis: auto;
     }
 }

@@ -45,11 +45,11 @@ export default {
 }
 
 .el-header{
-    --el-header-padding: 0 30px
+    --el-header-padding: 0 30px;
 }
 
 .el-footer{
-    height: -60px;
+    height: 60px;
 }
 
 .el-container{

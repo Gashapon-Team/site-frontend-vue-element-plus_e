@@ -1,7 +1,7 @@
 const sideMenu = [
     {
         title: '會員中心',
-        icon: 'UserFilled',
+        icon: 'Person',
         item: [
             {
                 subtitle: '基本資料設定',
@@ -44,7 +44,7 @@ const sideMenu = [
     },
     {
         title: '幫助中心',
-        icon: 'WarningFilled',
+        icon: 'Error',
         item: [
             {
                 subtitle: '問與答',
@@ -67,6 +67,10 @@ const sideMenu = [
     {
         title: '物流',
         icon: 'LocalGrocery',
+    },
+    {
+        title: '金流',
+        icon: 'StackedLine',
     }
 ]
 
