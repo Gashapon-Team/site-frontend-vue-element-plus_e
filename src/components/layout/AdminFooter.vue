@@ -8,7 +8,7 @@
 <style scoped lang="scss">
 .contanier{
     .text-color{
-        color: var(--content-secondary, #666);
+        color: #666;
         height: 50px;
         text-align: center;
         padding: 5px 20px
