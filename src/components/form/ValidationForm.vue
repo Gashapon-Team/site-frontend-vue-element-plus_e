@@ -142,7 +142,7 @@
 
 <script>
 import { ref, h, shallowRef, computed } from 'vue';
-import Image from '../Image/Image.vue';
+import Image from '../image/Image.vue';
 
 export default {
     name: 'basicForm',
