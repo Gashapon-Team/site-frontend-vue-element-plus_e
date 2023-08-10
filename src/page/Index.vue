@@ -46,10 +46,12 @@ export default {
 
 .el-header{
     --el-header-padding: 0 30px;
+    background: #FFF;
 }
 
 .el-footer{
     height: 60px;
+    background: #FFF;
 }
 
 .el-container{
