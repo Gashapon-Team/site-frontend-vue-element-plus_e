@@ -14,10 +14,11 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
     matrix:
+      fail-fast: true
       version: [16, 18]
     steps:
     - uses: actions/checkout@v2
-    - name: Use Node.js ${{ matrix.node-version }}
+    - name: Use Node.js ${{ matrix.version }}
       uses: actions/setup-node@v3
       with:
         node-version: ${{ matrix.version }}
