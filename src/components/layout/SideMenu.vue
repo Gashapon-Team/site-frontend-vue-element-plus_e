@@ -128,7 +128,6 @@ $--gray-200:#E5E7EB;
         }
 
     .el-menu-item {
-        // --el-menu-level: 2;
         padding-left: 65px;
         &:hover{
             color: $--gray-200;
