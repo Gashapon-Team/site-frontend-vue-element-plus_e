@@ -5,7 +5,8 @@
             <el-container class="validation_container">
                 <el-aside width="200px">
                     <div class="left-tab">
-                    <LeftTab/>
+                    <!-- <LeftTab/> -->
+                    <ValidationSideMenu/>
                     </div>
                 </el-aside>
                 <el-container>
@@ -17,7 +18,7 @@
                             <el-card class="box-card"><ValidationForm/></el-card>
                         </div>
                     </el-main>
-                    <el-footer>Footer</el-footer>
+                    <el-footer></el-footer>
                 </el-container>
             </el-container>
         </el-container>
@@ -29,7 +30,7 @@
 import Process from '../components/Process.vue';
 import AdminHeader from './layout/AdminHeader.vue';
 import ValidationForm from './form/ValidationForm.vue'
-import LeftTab from '../components/LeftTab.vue';
+import ValidationSideMenu from './layout/ValidationSideMenu.vue';
 
 export default {
     name: 'validation',
@@ -37,7 +38,8 @@ export default {
         Process,
         AdminHeader,
         ValidationForm,
-        LeftTab
+        // LeftTab,
+        ValidationSideMenu,
     }
 }
 
@@ -75,6 +77,11 @@ export default {
 .el-main{
     overflow: hidden;
     // min-height: 100vh;
+}
+
+.el-header{
+    --el-header-padding: 0 30px;
+    background: #FFF;
 }
 
 </style>

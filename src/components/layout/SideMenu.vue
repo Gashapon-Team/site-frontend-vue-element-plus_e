@@ -1,15 +1,15 @@
 <template>
+<el-scrollbar height="100vh">
     <el-row class="tac">
         <el-col class="sideMenuContainer">
             <div class="sideMenuContainer__hamburger">
                 <!-- <img src="../../assets/image/NewebPay_Logo.svg" /> -->
                 <img src="../../assets/image/demo.png" />
             </div>
-            <el-scrollbar height="100vh">
                 <el-menu default-active="2" text-color="#fff" class="el-menu-vertical-demo side-menu"
                     active-text-color="#00000" @open="handleOpen" @close="handleClose">
                     <div class="side-menu__subtiitle">會員平台管理</div>
-                    <el-sub-menu class="side-menu__item" v-for="(data, index1) in sideMenu" :index="index1" :key="index1">
+                    <el-sub-menu class="side-menu__item" v-for="(data, index1) in sideMenu" :index="`${index1}`" :key="index1">
                         <template #title>
                             <el-icon>
                                 <component :is="data.icon" />
@@ -24,9 +24,9 @@
                         </el-menu-item>
                     </el-sub-menu>
                 </el-menu>
-            </el-scrollbar>
         </el-col>
     </el-row>
+</el-scrollbar>
 </template>
 
 <script>
@@ -93,7 +93,7 @@ $--gray-200:#E5E7EB;
 
     &__hamburger {
         position: absolute;
-        z-index: 999;
+        z-index: 1;
         left: 5px;
 
         img {

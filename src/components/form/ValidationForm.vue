@@ -1,9 +1,9 @@
 <template>
-    <div class="flex flex-column">
+    <div class="flex flex-column" id="validation">
         <!-- 身分資料 -->
-        <div class="basicForm flex justify-center items-start ">
-            <div class="w-30">
-                <div class="section__title">身分資料</div>
+        <div class="basicForm flex justify-center items-start">
+            <div class="w-30 basicFormInner">
+                <div class="section__title" id="id_data">身分資料</div>
                 <div class="section__caption">這裡是說明文字</div>
             </div>
             <el-form class="w-70" ref="form" :model="sizeForm" label-width="auto" :label-position="labelPosition"
@@ -42,9 +42,9 @@
         </div>
         <el-divider border-style="double" />
         <!-- 國民身分證 -->
-        <div class="basicForm flex justify-center items-start ">
-            <div class="w-30">
-                <div class="section__title">國民身分證</div>
+        <div class="basicForm flex justify-center items-start">
+            <div class="w-30 basicFormInner">
+                <div class="section__title" id="id_detail">國民身分證</div>
                 <div class="section__caption">這裡是說明文字</div>
             </div>
             <el-form class="w-70" ref="form" :model="sizeForm" label-width="auto" :label-position="labelPosition"
@@ -101,9 +101,9 @@
         </div>
         <el-divider border-style="double" />
         <!-- 雙證件影像檔 -->
-        <div class="basicForm flex justify-center items-start ">
-            <div class="w-30">
-                <div class="section__title">雙證件影像檔</div>
+        <div class="basicForm flex justify-center items-start">
+            <div class="basicFormInner w-30">
+                <div class="section__title" id="id_image">雙證件影像檔</div>
                 <div class="section__caption">這裡是說明文字</div>
             </div>
             <el-form class="w-70" ref="form" :model="sizeForm" label-width="auto" :label-position="labelPosition"
